@@ -1,0 +1,472 @@
+--By Gấu_Kẹo#7322 and Arian#3704
+--Build A Boat
+local d = loadstring(game:HttpGet(('https://pastebin.com/raw/sx2Q4GGP')))()
+local f = d:MakeWindow({Name = "Candy UI V2.1.4", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
+local Tab = f:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://6026568198",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "player"
+})
+--thông báo ở góc
+d:MakeNotification({
+    Name = "Gấu_Kẹo",
+    Content = "Owder",
+    Image = "rbxassetid://4483345998",
+    Time = 10
+})
+wait(0)
+d:MakeNotification({
+    Name = "Arian",
+    Content = "Co Owder",
+    Image = "rbxassetid://4483345998",
+    Time = 10
+})
+--Về Mặc Định
+Tab:AddButton({
+	Name = "Đặt lại",
+	Callback = function() 
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 
+game.Workspace.Gravity = 196.2
+end  
+})
+--Thanh Tốc Độ [Speed]
+Tab:AddSlider({
+	Name = "Tốc Độ",
+	Min = 0,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,100,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(a)
+		   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a end
+})
+--Jump
+Tab:AddSlider({
+	Name = "Nhảy Cao",
+	Min = 0,
+	Max = 500,
+	Default = 50,
+	Color = Color3.fromRGB(255,100,255),
+	Increment = 1,
+	ValueName = "Jump",
+	Callback = function(a)
+		   game.Players.LocalPlayer.Character.Humanoid.JumpPower = a end
+})
+--gravity
+Tab:AddSlider({
+	Name = "Trọng Lực",
+	Min = 0,
+	Max = 500,
+	Default = 196.2,
+	Color = Color3.fromRGB(255,100,255),
+	Increment = 1,
+	ValueName = "Gravity",
+	Callback = function(a)
+		   game.Workspace.Gravity = a end
+})
+Tab:AddBind({
+	Name = "Free Pink Candy",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+game.Workspace.Gravity = 196.2
+end  
+})
+--Version
+local Section = Tab:AddSection({
+	Name = "Version 2.1.4"
+})
+local Section = Tab:AddSection({
+	Name = "Đã đc mã hóa mã nguồn"
+})
+--Version
+Tab:AddParagraph("Thông báo","Đây sẽ là liên kết để nhận được cập nhập tập lệnh trong tương lai")
+Tab:AddButton({
+	Name = "Copy link",
+	Callback = function()
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Saved to clipboard",Color =Color3.fromRGB(255,200,255)})
+setclipboard("https://github.com/GauCandy/gaukeo/blob/main/Key%20script")
+end
+
+})
+Tab:AddButton({
+	Name = "Khởi tập lệnh mới nhất [New UI]",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/script%20g%E1%BA%A5u.lua"))() end  
+})
+Tab:AddButton({
+	Name = "Khởi tập lệnh thử nghiệm [Beta UI]",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/beta.lua"))() end  
+})
+--Build A Boat
+local Tab = f:MakeTab({
+	Name = "Build A Boat",
+	Icon = "rbxassetid://7044284832",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Water No Dame"
+})
+Tab:AddButton({
+	Name = "Water No Dame By Arian#3704",
+	Callback = function()
+ 			LocalPlayerName = game:GetService("Players").LocalPlayer.Name
+    			LocalPlayerWorkspace = game:GetService("Workspace")[LocalPlayerName]
+    			LocalPlayerWorkspace.WaterDetector:Destroy()
+	end
+})
+--Auto build
+local Section = Tab:AddSection({
+	Name = "Auto Build"
+})
+Tab:AddButton({
+	Name = "Tự Động Xây [Auto Build And Copy]",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Auto Build",Color =Color3.fromRGB(255,200,255)}) 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+end
+})
+--Auto farm
+local Section = Tab:AddSection({
+	Name = "Auto Farm"
+})
+Tab:AddButton({
+	Name = "[On]",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Enabled Auto Farm",Color =Color3.fromRGB(255,200,255)}) 
+ loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr"))() 
+ end
+})
+Tab:AddButton({
+	Name = "[Off]",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Disabled Auto Farm",Color =Color3.fromRGB(170,0,170)})
+ loadstring(game:HttpGet("https://pastebin.com/raw/UEGHfeiv"))() 
+ end
+})
+--Quest Old
+local Section = Tab:AddSection({
+	Name = "Nhiệm vụ cũ [Old Quest]"
+})
+Tab:AddButton({
+	Name = "Fabby Quest",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Fabby Quest",Color =Color3.fromRGB(255,200,255)})
+       workspace.QuestMakerEvent:FireServer(100)
+end
+})Tab:AddButton({
+	Name = "Gingerbread Fight",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Gingerbread Fight",Color =Color3.fromRGB(255,200,255)})
+       workspace.QuestMakerEvent:FireServer(99)
+end
+})Tab:AddButton({
+	Name = "Xmas Fight",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Xmas Fight",Color =Color3.fromRGB(255,200,255)})
+      workspace.QuestMakerEvent:FireServer(101)
+end
+})
+Tab:AddButton({
+	Name = "Stop Quest",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Disabled Quest",Color =Color3.fromRGB(170,0,170)})
+      workspace.QuestMakerEvent:FireServer(0)
+end
+})
+--Join old events
+local Section = Tab:AddSection({
+	Name = "Tham Gia Sự Kiện Cũ [Join Old Events]"
+})
+Tab:AddButton({
+	Name = "Old Events",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadtring Old Events",Color =Color3.fromRGB(170,0,170)})
+      loadstring(game:HttpGet("https://pastebin.com/raw/C39cfVy1"))() 
+	  end
+})
+
+--Crash game Cần có game pass fox
+--Thực ra có script ko cần gamepass fox
+--Nhưng chưa gỡ được link discord của script đó nên k dám gắn vô
+local Section = Tab:AddSection({
+	Name = "crash game☠"
+})
+Tab:AddButton({
+	Name = "Cần Có Game Pass Fox [Game pass fox required]{No Key}",
+	Callback = function()
+game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Start overloading the server",Color =Color3.fromRGB(255,0,0)}) 
+       while wait(0.1) do
+game:GetService("Workspace").ChangeCharacter:FireServer("FoxCharacter")
+	end 
+end
+})
+--Auto Buy tab
+local Tab = f:MakeTab({
+	Name = "Shop",
+	Icon = "rbxassetid://6031265976",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Buy item"
+})
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "0",
+	Options = {"0","1", "2", "3", "4", "5"},
+	Callback = function(a)  print(a)
+	end
+})
+local Section = Tab:AddSection({
+	Name = "Auto Buy chest"
+})
+Tab:AddButton({
+	Name = "Huyền Thoại [Legendary Chest]",
+	Callback = function()
+	while wait(1) do
+       workspace.ItemBoughtFromShop:InvokeServer("Legendary Chest", 1) 
+	   end
+	end
+})
+Tab:AddButton({
+	Name = "Sử Thi [Epic Chest]",
+	Callback = function()
+	while wait(1) do
+       workspace.ItemBoughtFromShop:InvokeServer("Epic Chest", 1) 
+	   end
+	end
+})
+Tab:AddButton({
+	Name = "Hiếm [Rare Chest]",
+	Callback = function()
+	while wait(1) do
+       workspace.ItemBoughtFromShop:InvokeServer("Rare Chest", 1) 
+		end
+	end
+})
+Tab:AddButton({
+	Name = "Không Phổ Biến [Uncommon Chest]",
+	Callback = function()
+	while wait(1) do
+       workspace.ItemBoughtFromShop:InvokeServer("Uncommon Chest", 1) 
+	   end
+	end
+})
+Tab:AddButton({
+	Name = "Phổ Biến [Common Chest]",
+	Callback = function()
+	while wait(1) do
+       workspace.ItemBoughtFromShop:InvokeServer("Common Chest", 1) 
+	   end
+	end
+})
+--script khác
+local Tab = f:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://7044233235",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Sử dụng đc hầu hết trong các game khác [used on most games]"
+})
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() 
+	end
+		
+})
+--tập lệnh emote
+Tab:AddButton({
+	Name = "Tập Lệnh Emotes [Key Tab or , ]",
+	Callback = function()
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Emotse",Color =Color3.fromRGB(255,200,255)})
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/160d7bac9c04ff65258e33949b7bd39f/raw/7ee7d4c1a434e1cf683b34c3d99a52c9fe949477/emote"))() 
+	end
+		
+})
+--anti afk
+Tab:AddButton({
+	Name = "Anti Afk",
+	Callback = function()
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadstring Anti Afk",Color =Color3.fromRGB(170,0,170)})
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/d412c643f10a9a93de5ed9a1b629d05a/raw/2fedb6b3a3bb80b2711da64109ac4ac7da2e9bac/anti%2520afk"))() 
+	end
+		
+})
+local Section = Tab:AddSection({
+	Name = "Cho mấy đứa thích hóng hớt :)"
+})
+--hiển thị tin nhắn riêng bật
+Tab:AddButton({
+	Name = "Hiển Thị Chat Riêng [On]",
+	Callback = function() 
+enabled = true
+spyOnMyself = true
+public = false
+publicItalics = true
+privateProperties = {
+    Color = Color3.fromRGB(255,200,255); 
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 18;
+}
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+ 
+local function onChatted(p,msg)
+    if _G.chatSpyInstance == instance then
+        if p==player and msg:lower():sub(1,4)=="/spy" then
+            enabled = not enabled
+            wait(0.3)
+            privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+            StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+        elseif enabled and (spyOnMyself==true or p~=player) then
+            msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+            local hidden = true
+            local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+                if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+                    hidden = false
+                end
+            end)
+            wait(1)
+            conn:Disconnect()
+            if hidden and enabled then
+                if public then
+                    saymsg:FireServer((publicItalics and "/me " or '').."{Gấu} [".. p.Name .."]: "..msg,"All")
+                else
+                    privateProperties.Text = "{Gấu} [".. p.Name .."]: "..msg
+                    StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+                end
+            end
+        end
+    end
+end
+ 
+for _,p in ipairs(Players:GetPlayers()) do
+    p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end
+Players.PlayerAdded:Connect(function(p)
+    p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end)
+privateProperties.Text = "{Gấu} tôi sẽ báo với bạn khi có tin nhắn riêng"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y) end
+})
+--hiển thị tin nhắn riêng tắt
+ Tab:AddButton({
+	Name = "Hiển Thị Chat Riêng [OFF]",
+	Callback = function() 
+enabled = true
+spyOnMyself = true
+public = false
+publicItalics = true
+privateProperties = {
+    Color = Color3.fromRGB(255,200,255); 
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 18;
+}
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+ 
+local function onChatted(p,msg)
+    if _G.chatSpyInstance == instance then
+        if p==player and msg:lower():sub(1,4)=="/spy" then
+            enabled = not enabled
+            wait(0.3)
+            privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+            StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+        elseif enabled and (spyOnMyself==true or p~=player) then
+            msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+            local hidden = false
+            local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+                if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+                    hidden = false
+                end
+            end)
+            wait(1)
+            conn:Disconnect()
+            if hidden and enabled then
+                if public then
+                    saymsg:FireServer((publicItalics and "/me " or '').."{Gấu} [".. p.Name .."]: "..msg,"All")
+                else
+                    privateProperties.Text = "{Gấu} [".. p.Name .."]: "..msg
+                    StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+                end
+            end
+        end
+    end
+end
+ 
+for _,p in ipairs(Players:GetPlayers()) do
+    p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end
+Players.PlayerAdded:Connect(function(p)
+    p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end)
+privateProperties.Text = "{Gấu} tôi sẽ ngừng thông báo tin nhắn riêng cho bạn"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y) end})
+--troll guis
+local Section = Tab:AddSection({
+	Name = "Troll"
+})
+--gravity gun
+Tab:AddButton({
+	Name = "Gravity Gun",
+	Callback = function() 
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Get Gravity Gun",Color =Color3.fromRGB(255,200,255)})
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Gravity%20gun"))() 
+	end
+})
+--Tall man
+Tab:AddButton({
+	Name = "Tall Man",
+	Callback = function() 
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadstring Tall Man",Color =Color3.fromRGB(170,0,170)})
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Tall%20man"))() 
+	end
+})
+--music
+local Tab = f:MakeTab({
+	Name = "music",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--lời nhắn
+local Tab = f:MakeTab({
+	Name = "Lời Nhắn",
+	Icon = "rbxassetid://6034509993",
+	PremiumOnly = false
+})
+Tab:AddParagraph("Người bạn thân của tôi","Fox tớ rất quý cậu đó fox ;b")
+Tab:AddParagraph("em của tôi","Sushi,Arian và Fabian")
+Tab:AddParagraph(" Thank Arian","Arian cảm ơn em vì giúp cj đổi màu Guis cũng như chỉ cách sử dụng nó :b")
+Tab:AddParagraph("Những người sử dụng tập lệnh của tôi","Chúc các bạn 1 ngày mới vui vẻ")
+--video
+Tab:AddButton({
+	Name = "Mvn kệ đi đừng ấn vô :)",
+	Callback = function() 
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/c9dac0e362146e8d93570111ac6a59a9"))() 
+	end
+})
+
