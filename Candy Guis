@@ -1,7 +1,7 @@
 --By Gấu_Kẹo#7322 and Arian#3704
 --Build A Boat
-local d = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GauCandy/gaukeo/main/GuischoCandyV2')))()
-local f = d:MakeWindow({Name = "Candy UI V2.1.4", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
+local d = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Candy%20Guis')))()
+local f = d:MakeWindow({Name = "Candy UI V2.2.5", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
 local Tab = f:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://6026568198",
@@ -81,7 +81,7 @@ end
 })
 --Version
 local Section = Tab:AddSection({
-	Name = "Version 2.1.4"
+	Name = "Version 2.2.5"
 })
 local Section = Tab:AddSection({
 	Name = "Đã đc mã hóa mã nguồn"
@@ -98,11 +98,7 @@ end
 })
 Tab:AddButton({
 	Name = "Khởi tập lệnh mới nhất [New UI]",
-	Callback = function() loadstring(game:HttpGet(""))() end  
-})
-Tab:AddButton({
-	Name = "Khởi tập lệnh thử nghiệm [Beta UI]",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/beta.lua"))() end  
+	Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/JhBcTZwu"))() end  
 })
 --Build A Boat
 local Tab = f:MakeTab({
@@ -129,7 +125,7 @@ Tab:AddButton({
 	Name = "Tự Động Xây [Auto Build And Copy]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Auto Build",Color =Color3.fromRGB(255,200,255)}) 
- loadstring(game:HttpGet("https://github.com/GauCandy/gaukeo/blob/main/autobuild"))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Auto%20Build"))()
 end
 })
 --Auto farm
@@ -140,14 +136,14 @@ Tab:AddButton({
 	Name = "[On]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Enabled Auto Farm",Color =Color3.fromRGB(255,200,255)}) 
- loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Auto%20farm%20on"))() 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Auto%20Farm%20%5BOn%5D"))() 
  end
 })
 Tab:AddButton({
 	Name = "[Off]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Disabled Auto Farm",Color =Color3.fromRGB(170,0,170)})
- loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/auto%20farm%20off"))() 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Auto%20Farm%20%5BOff%5D"))() 
  end
 })
 --Quest Old
@@ -188,7 +184,7 @@ Tab:AddButton({
 	Name = "Old Events",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadtring Old Events",Color =Color3.fromRGB(170,0,170)})
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/old%20quest%20build%20a%20boat"))() 
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Load%20Old%20Evenst"))() 
 	  end
 })
 
@@ -287,7 +283,7 @@ Tab:AddButton({
 	Name = "Tập Lệnh Emotes [Key Tab or , ]",
 	Callback = function()
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Emotse",Color =Color3.fromRGB(255,200,255)})
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Emote"))() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Emotes"))() 
 	end
 		
 })
@@ -296,7 +292,7 @@ Tab:AddButton({
 	Name = "Anti Afk",
 	Callback = function()
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadstring Anti Afk",Color =Color3.fromRGB(170,0,170)})
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Antiafk"))() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Anti%20Afk"))()
 	end
 		
 })
@@ -435,7 +431,7 @@ Tab:AddButton({
 	Name = "Gravity Gun",
 	Callback = function() 
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Get Gravity Gun",Color =Color3.fromRGB(255,200,255)})
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Gravity%20gun"))() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Gravity%20Gun"))() 
 	end
 })
 --Tall man
@@ -443,7 +439,7 @@ Tab:AddButton({
 	Name = "Tall Man",
 	Callback = function() 
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadstring Tall Man",Color =Color3.fromRGB(170,0,170)})
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Tall%20man"))() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Tall%20Man"))() 
 	end
 })
 --music
@@ -466,7 +462,7 @@ Tab:AddParagraph("Những người sử dụng tập lệnh của tôi","Chúc c
 Tab:AddButton({
 	Name = "Mvn kệ đi đừng ấn vô :)",
 	Callback = function() 
-		loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/c9dac0e362146e8d93570111ac6a59a9"))() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Playvid/main/Vid%20Kurage"))() 
 	end
 })
 
