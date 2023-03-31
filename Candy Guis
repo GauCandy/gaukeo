@@ -1,6 +1,6 @@
 --By Gấu_Kẹo#7322 and Arian#3704
 --Build A Boat
-local d = loadstring(game:HttpGet(('https://pastebin.com/raw/sx2Q4GGP')))()
+local d = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GauCandy/gaukeo/main/GuischoCandyV2')))()
 local f = d:MakeWindow({Name = "Candy UI V2.1.4", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
 local Tab = f:MakeTab({
 	Name = "Main",
@@ -92,13 +92,13 @@ Tab:AddButton({
 	Name = "Copy link",
 	Callback = function()
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Saved to clipboard",Color =Color3.fromRGB(255,200,255)})
-setclipboard("https://github.com/GauCandy/gaukeo/blob/main/Key%20script")
+setclipboard("https://pastebin.com/5tDSzDFk")
 end
 
 })
 Tab:AddButton({
 	Name = "Khởi tập lệnh mới nhất [New UI]",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/script%20g%E1%BA%A5u.lua"))() end  
+	Callback = function() loadstring(game:HttpGet(""))() end  
 })
 Tab:AddButton({
 	Name = "Khởi tập lệnh thử nghiệm [Beta UI]",
@@ -129,7 +129,7 @@ Tab:AddButton({
 	Name = "Tự Động Xây [Auto Build And Copy]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Auto Build",Color =Color3.fromRGB(255,200,255)}) 
- loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+ loadstring(game:HttpGet("https://github.com/GauCandy/gaukeo/blob/main/autobuild"))()
 end
 })
 --Auto farm
@@ -140,14 +140,14 @@ Tab:AddButton({
 	Name = "[On]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Enabled Auto Farm",Color =Color3.fromRGB(255,200,255)}) 
- loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr"))() 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Auto%20farm%20on"))() 
  end
 })
 Tab:AddButton({
 	Name = "[Off]",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Disabled Auto Farm",Color =Color3.fromRGB(170,0,170)})
- loadstring(game:HttpGet("https://pastebin.com/raw/UEGHfeiv"))() 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/auto%20farm%20off"))() 
  end
 })
 --Quest Old
@@ -188,7 +188,7 @@ Tab:AddButton({
 	Name = "Old Events",
 	Callback = function()
 game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadtring Old Events",Color =Color3.fromRGB(170,0,170)})
-      loadstring(game:HttpGet("https://pastebin.com/raw/C39cfVy1"))() 
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/old%20quest%20build%20a%20boat"))() 
 	  end
 })
 
@@ -287,7 +287,7 @@ Tab:AddButton({
 	Name = "Tập Lệnh Emotes [Key Tab or , ]",
 	Callback = function()
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Emotse",Color =Color3.fromRGB(255,200,255)})
-			loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/160d7bac9c04ff65258e33949b7bd39f/raw/7ee7d4c1a434e1cf683b34c3d99a52c9fe949477/emote"))() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Emote"))() 
 	end
 		
 })
@@ -296,7 +296,7 @@ Tab:AddButton({
 	Name = "Anti Afk",
 	Callback = function()
 	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Arian} Loadstring Anti Afk",Color =Color3.fromRGB(170,0,170)})
-			loadstring(game:HttpGet("https://gist.githubusercontent.com/GauCandy/d412c643f10a9a93de5ed9a1b629d05a/raw/2fedb6b3a3bb80b2711da64109ac4ac7da2e9bac/anti%2520afk"))() 
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/gaukeo/main/Antiafk"))() 
 	end
 		
 })
