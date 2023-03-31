@@ -105,7 +105,7 @@ VerifyButton.MouseButton1Down:connect(function()
 
 		GUI.Parent = nil
 
-	loadstring(game:HttpGet('https://pastebin.com/raw/JhBcTZwu'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GauCandy/gaukeo/main/Candy%20Guis'))()
 
 	end
 end)
