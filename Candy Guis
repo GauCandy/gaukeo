@@ -212,18 +212,11 @@ local Tab = f:MakeTab({
 local Section = Tab:AddSection({
 	Name = "Buy item"
 })
-Tab:AddDropdown({
-	Name = "Dropdown",
-	Default = "0",
-	Options = {"0","1", "2", "3", "4", "5"},
-	Callback = function(a)  print(a)
-	end
-})
 local Section = Tab:AddSection({
 	Name = "Auto Buy chest"
 })
 Tab:AddButton({
-	Name = "Huyền Thoại [Legendary Chest]",
+	Name = "Huyền Thoại[Legendary Chest]",
 	Callback = function()
 	while wait(1) do
        workspace.ItemBoughtFromShop:InvokeServer("Legendary Chest", 1) 
