@@ -2,7 +2,7 @@
 --Build A Boat
 if game.PlaceId == 537413528 then
         local d = loadstring(game:HttpGet(('https://pastebin.com/raw/GUT0hZXv')))()
-        local f = d:MakeWindow({Name = "Candy UI V2.2.5", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
+        local f = d:MakeWindow({Name = "Candy UI V2.2.", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
         local Tab = f:MakeTab({
             Name = "Main",
             Icon = "rbxassetid://6026568198",
@@ -465,7 +465,7 @@ if game.PlaceId == 537413528 then
 
         --video
         Tab:AddButton({
-            Name = "Mvn kệ đi đừng ấn vô :)[Dont click]",
+            Name = "cick vô đợi 10s tùy tốc độ mạng",
             Callback = function() 
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Playvid/main/Vid%20Kurage"))() 
             end
