@@ -1,7 +1,7 @@
 --By Gấu_Kẹo#7322 and Arian#3704
 --Build A Boat
 local d = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Candy%20Guis')))()
-local f = d:MakeWindow({Name = "Candy UI V2.2.5", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
+local f = d:MakeWindow({Name = "Candy UI V2.2.66", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
 local Tab = f:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://6026568198",
@@ -81,7 +81,7 @@ end
 })
 --Version
 local Section = Tab:AddSection({
-	Name = "Version 2.2.5"
+	Name = "Version 2.2.6"
 })
 local Section = Tab:AddSection({
 	Name = "Đã đc mã hóa mã nguồn"
@@ -284,7 +284,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Fishing Simulator",
 	Callback = function()
-	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Emotse",Color =Color3.fromRGB(255,200,255)})
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Fishing Simulator",Color =Color3.fromRGB(255,200,255)})
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Fishing%20Simulator"))() 
 	end
 		
