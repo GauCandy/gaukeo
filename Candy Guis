@@ -1,7 +1,7 @@
 --By Gấu_Kẹo#7322 and Arian#3704
 --Build A Boat
 local d = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Candy%20Guis')))()
-local f = d:MakeWindow({Name = "Candy UI V2.2.66", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
+local f = d:MakeWindow({Name = "Candy UI V2.2.6", HidePremium = false, SaveConfig = true, ConfigFolder = "d"})
 local Tab = f:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://6026568198",
