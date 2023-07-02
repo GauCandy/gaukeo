@@ -280,6 +280,15 @@ Tab:AddButton({
 	end
 		
 })
+--tập lệnh game câu cá
+Tab:AddButton({
+	Name = "Fishing Simulator",
+	Callback = function()
+	game.StarterGui:SetCore("ChatMakeSystemMessage",{ Text = "{Gấu} Loadstring Emotse",Color =Color3.fromRGB(255,200,255)})
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GauCandy/Script-c-i-th-m/main/Fishing%20Simulator"))() 
+	end
+		
+})
 --anti afk
 Tab:AddButton({
 	Name = "Anti Afk",
